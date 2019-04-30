@@ -1,22 +1,22 @@
-const fib = n => {
-  if (n < 0) {
+const fib = num => {
+  if (num < 0) {
     throw new Error();
   }
 
-  if (typeof n === "string") {
+  if (typeof num === "string") {
     throw new Error();
   }
 
-  if (n == 0) {
+  if (num == 0) {
     return 0;
   }
 
-  if (n == 1) {
+  if (num == 1) {
     return 1;
   }
 
-  if (n >= 2) {
-    return fib(n - 1) + fib(n - 2);
+  if (num >= 2) {
+    return fib(num - 1) + fib(num - 2);
   }
 };
 
